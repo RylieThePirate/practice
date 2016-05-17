@@ -15,10 +15,10 @@ print "Aw shit! Your BMI is " + str(BMI) + "!"
 if BMI < 18.5:
     print "Go eat a damn sandwich!"
 # normal weight (BMI between 18.5 & 24.9)
-elif BMI >= 18.5 and BMI <= 24.9:
+elif BMI >= 18.5 and BMI < 25:
     print "Gooood. Gooooood."
 # overweight (BMI between 25.0 & 29.9)
-elif BMI >= 25.0 and BMI <= 29.9:
+elif BMI >= 25.0 and BMI < 30:
     print "Dang."
 # obese (BMI 30.0 and above)
 else:
