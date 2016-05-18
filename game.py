@@ -1,6 +1,6 @@
 import random
-keep_playing = True
-while keep_playing:
+def play_game():
+    global keep_playing
     secret_number = random.randrange(0, 10)
     number_guesses = 0
     done = False
@@ -22,3 +22,6 @@ while keep_playing:
             if answer == "no":
                 keep_playing = False
                 print "Bye bitch"
+keep_playing = True
+while keep_playing:
+    play_game()
