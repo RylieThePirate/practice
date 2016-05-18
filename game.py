@@ -1,9 +1,13 @@
 import random
+# def gives a name to a block of code
+# can give it parameters
 def play_game():
     global keep_playing
+    # global uses the variable (keep_playing) outside of the procedure
     secret_number = random.randrange(0, 10)
     number_guesses = 0
     done = False
+    # repeats while the condition specified is true
     while not done:
         print "Guess a number between 0 and 10"
         guess = int(raw_input())
